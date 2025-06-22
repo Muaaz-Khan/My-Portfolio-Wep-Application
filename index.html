@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website - Easy Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CSS (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav>
+      <img src="assets/image/nav-icon.png" class="logo">
+      <ul id="side-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="container">
+
+      <div class="header-text">
+        <p>Frontend Developer</p>
+        <h1>Hi, I'm <span>Muaaz Khan</span><br>From Lahore</h1>
+      </div>
+    </div>
+  </header>
+  <!-- --- tab --- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="assets/image/hero-banner.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laborum repellat vitae, cumque laudantium
+            repellendus molestias nobis possimus, magnam quis commodi cupiditate. Repellendus excepturi unde optio
+            eveniet! Pariatur, nisi impedit!</p>
+          <div class="tab-tiles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <!-- Skills -->
+          <div class="tab-contents active-content" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Web Designing</li>
+              <li><span>Web Development</span><br>I'm creating a responsive Web Application</li>
+              <li><span>SEO on-page/off-page & technical SEO</span><br>Basic Knowledge of SEO</li>
+            </ul>
+          </div>
+          <!-- Experience tab Content -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - 2025 </span><br>I'm creating a basic structre of Website using HTML, CSS & JavaScript</li>
+            </ul>
+          </div>
+
+          <!-- Education tab Content -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2025</span><br>ADP-CS from GC university Faisalabad</li>
+              <li><span>2022</span><br>Web Development from I-Web Software House.</li>
+              <li><span>2021</span><br>SEO form STEP Institute of Art, Design & Management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---services----->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Static Front-End Development</h2>
+          <p>Builds fast, secure websites using only HTML, CSS, and basic JavaScript. Ideal for portfolios, blogs, and
+            marketing sites. No databases or server code needed. Deploys easily to CDNs. Best for content that rarely
+            changes.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>Creates intuitive digital experiences through user research, wireframing, and prototyping. Combines
+            aesthetics (UI) with functionality (UX) using tools like Figma and Adobe XD. Focuses on solving user
+            problems while ensuring visual appeal and seamless interactions.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-regular fa-file-code"></i>
+          <h2>Framework-Based</h2>
+          <p>Leverages CSS frameworks (Bootstrap/Tailwind) and JavaScript libraries (React/Vue) to build adaptive UIs.
+            Implements mobile-first workflows with responsive grids and components. Streamlines cross-device
+            compatibility while maintaining design consistency.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---portfolio--- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/image/Amazon.png" alt="Work Example 1">
+            <div class="layer">
+              <h3>Amazon Home page clone</h3>
+              <p>HTML/CSS/JS Amazon UI clone with responsive design.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/image/Random-Password-Generator.png" alt="Work Example 2">
+            <div class="layer">
+              <h3>Random Password <br>
+                 Generator</h3>
+              <p>Web app that creates randomized passwords with adjustable length, symbols, and copy functionality.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/image/responsive-webApplication.png" alt="Work Example 3">
+            <div class="layer">
+              <h3>Responsive Web Application</h3>
+              <p>Responsive website using CSS media queries for all screen sizes.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- --------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <a type="submit" class="btn btn2">Submit</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright with Muaaz-webdev Made for Intro and share experiences</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
